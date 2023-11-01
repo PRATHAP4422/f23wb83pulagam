@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var carRouter = require('./routes/car');
 var boardRouter = require('./routes/board');
-
+var chooseRouter = require('./routes/choose');
 
 
 var app = express();
@@ -27,6 +27,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/car', carRouter);
 app.use('/board', boardRouter);
+app.use('/choose', chooseRouter);
 
 
 
